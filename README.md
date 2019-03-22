@@ -1,5 +1,6 @@
 # SKIL: Skymind's Intelligence Layer
 
+This project is introduced in an attempt to demonstrate the use of original repo here: https://github.com/SkymindIO/skil-python
 ## Installation
 
 
@@ -50,6 +51,22 @@ pip install skil --user
 ```
 
 ## Getting started
+
+## Features
+
+### 1. Natural Language Processing
+
+### 2. Image Recognition
+
+
+### 3. Object Detection
+* Human Detection
+* Face Detection
+
+### 4. Anomaly Detection
+* Fraud Detection
+
+### 5. Recommendation System
 
 
 
