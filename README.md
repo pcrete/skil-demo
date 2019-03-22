@@ -1,6 +1,9 @@
 # SKIL: Skymind's Intelligence Layer
 
 This project is introduced in an attempt to demonstrate the use of original repo here: https://github.com/SkymindIO/skil-python
+
+<img src="https://skymind.ai/images/platform/skildiagram.png" width="700" />
+
 ## Installation
 
 
