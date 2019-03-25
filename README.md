@@ -4,6 +4,7 @@ This project is introduced in an attempt to demonstrate the use of original repo
 
 <img src="https://skymind.ai/images/platform/skildiagram.png" width="700" />
 
+
 ## Installation
 
 
@@ -53,6 +54,7 @@ SKIL's Python client can be SKIL's Docker Imagenstalled from PyPI:
 pip install skil --user
 ```
 
+
 ## Getting started
 
 ## Features
@@ -71,6 +73,10 @@ pip install skil --user
 
 ### 5. Recommendation System
 
+
+## MLOps - Deep Learning in Production
+
+<img src="docs/skil-1.png" width="700" />
 
 
 
