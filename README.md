@@ -74,9 +74,9 @@ pip install skil --user
 ### 5. Recommendation System
 
 
-## MLOps - Deep Learning in Production
+## MLOps - Machine Learning in Production
 
-<img src="docs/skil-1.png" width="700" />
+<img src="docs/skil-1.png" width="850" />
 
 
 
