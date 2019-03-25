@@ -1,4 +1,4 @@
-# SKIL: Skymind's Intelligence Layer
+# SKIL: Skymind Intelligence Layer
 
 This project is introduced in an attempt to demonstrate the use of original repo here: https://github.com/SkymindIO/skil-python
 
@@ -13,13 +13,13 @@ To install SKIL itself, head over to [skymind.ai](https://docs.skymind.ai/docs/d
 
 #### Run the SKIL server
 ```bash
-# Pull the SKIL image from the repo
+# pull the SKIL image
 docker pull skymindops/skil-ce
 # run the SKIL server
 docker run --rm -it -p 9008:9008 skymindops/skil-ce bash /start-skil.sh
 ```
 
-#### Persisting Data with Zookeeper
+#### Persisting data with Zookeeper
 
 To persist your notebooks and model server configurations is to use a separate zookeeper container and use persistent data volumes for zookeeper and SKIL. 
 
@@ -42,7 +42,7 @@ Now, you can access the SKIL UI by opening a browser window to [http://localhost
 
 
 ```bash
-# Afterwards you can stop SKIL and zookeeper with:
+# afterwards you can stop SKIL and Zookeeper with:
 docker stop skil
 docker stop zookeeper
 ```
@@ -74,9 +74,9 @@ pip install skil --user
 ### 5. Recommendation System
 
 
-## MLOps - Machine Learning in Production
+## MLOps - Deep Learning in Production
 
-<img src="docs/skil-1.png" width="850" />
+<img src="docs/skil-1.png" width="700" />
 
 
 
