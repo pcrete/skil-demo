@@ -10,10 +10,6 @@ docker run --rm -it -p 3000:80 tutum/hello-world
 ```
 
 ### 2. Kubernetes deployment
-```bash
-$ kubectl create -f deployment.yaml
-```
-
 
 ```yaml
 ---
@@ -35,7 +31,7 @@ spec:
   type: LoadBalancer
  
 ---
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: hello-world-deployment
@@ -51,8 +47,29 @@ spec:
           image: tutum/hello-world
           ports:
             - containerPort: 80
-
 ```
+
+### 3. Commands
+```bash
+minikube start
+minikube dashboard
+
+kubectl get nodes
+kubectl get pods
+kubectl get services
+kubectl cluster-info
+
+kubectl apply -f deployment.yaml
+```
+
+**hello-world-client**:
+[http://192.168.99.100:30001](http://192.168.99.100:30001)
+![hello-world-client.png](docs/hello-world-client.png) 
+**Minikube Deshboard: **
+[http://127.0.0.1:42621/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/#!/workload?namespace=default
+](http://127.0.0.1:42621/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/#!/workload?namespace=default)
+
+![minikube-dashboard.png](docs/minikube-dashboard.png) 
 
 ## Reference
 
