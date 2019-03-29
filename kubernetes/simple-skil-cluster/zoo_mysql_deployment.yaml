@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: zookeeper-mysql
+  labels:
+    app: zksql
+spec:
+  hostname: zksql
+  subdomain: zksqlsrv
+  containers:
+  - name: zookeeper
+    image: <loginServerName>/zookeeper # You'll find the loginServerName at the end of this document as you follow along
+    ports:
+    - name: zkmain
+      containerPort: 2181
+      protocol: TCP
+    volumeMounts:
+    - mountPath: /data
+      name: zk-data
+    - mountPath: /datalog
+      name: zk-datalog
+  - name: mysql
+    image: <loginServerName>/mysql # You'll find the loginServerName at the end of this document as you follow along
+    ports:
+    - name: sqlmain
+      containerPort: 3306
+      protocol: TCP
+    volumeMounts:
+    - mountPath: /var/lib/mysql
+      name: mysql-data
+    env:
+    - name: MYSQL_ALLOW_EMPTY_PASSWORD
+      value: "true"
+    - name: MYSQL_DATABASE
+      value: "skil_migrations"
+  volumes:
+  - name: zk-data
+    emptyDir: {}
+  - name: zk-datalog
+    emptyDir: {}
+  - name: mysql-data
+    emptyDir: {}

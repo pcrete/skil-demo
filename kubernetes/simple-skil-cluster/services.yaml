@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: zksqlsrv
+spec:
+  ports:
+  - port: 2181
+    targetPort: 2181
+    protocol: TCP
+    name: zkmain
+  - port: 3306
+    targetPort: 3306
+    protocol: TCP
+    name: sqlmain
+  selector:
+    app: zksql
+  clusterIP: None
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: skil
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 9008
+    targetPort: 9008
+    protocol: TCP
+    name: skilmain
+  - port: 8080
+    targetPort: 8080
+    protocol: TCP
+    name: skilzep
+  selector:
+    app: skil

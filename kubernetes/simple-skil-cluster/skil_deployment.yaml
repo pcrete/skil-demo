@@ -1,0 +1,42 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: skil
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: skil
+    spec:
+      containers:
+      - name: skil
+        image: <loginServerName>/skymind/skil # You'll find the loginServerName at the end of this document as you follow along
+        ports:
+        - name: skilmain
+          containerPort: 9008
+          protocol: TCP
+        - name: skilzep
+          containerPort: 8080
+          protocol: TCP
+        env:
+        - name: SKIL_USE_EMBEDDED_DB
+          value: "false"
+        - name: SKIL_DB_NAME
+          value: "skil_migrations"
+        - name: SKIL_DB_DRIVER
+          value: "com.mysql.jdbc.Driver"  
+        - name: SKIL_DB_URL
+          value: "jdbc:mysql://zksql.zksqlsrv.default.svc.cluster.local:3306/skil_migrations"  
+        - name: SKIL_DB_USER
+          value: "root"
+        - name: MODEL_HISTORY_SERVER_LAUNCH_DEFAULT
+          value: "false"  
+        - name: ZEPPELIN_LAUNCH_DEFAULT
+          value: "false"  
+        - name: ZOOKEEPER_HOST
+          value: "zksql.zksqlsrv.default.svc.cluster.local"
+        - name: ZOOKEEPER_PORT
+          value: "2181"
+        - name: ZOOKEEPER_EMBEDDED
+          value: "false"
