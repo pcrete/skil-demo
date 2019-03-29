@@ -2,7 +2,7 @@
 
 This project is introduced in an attempt to demonstrate the use of original repo here: https://github.com/SkymindIO/skil-python
 
-<img src="https://skymind.ai/images/platform/skildiagram.png" width="700" />
+<img src="docs/skil.png" width="800" />
 
 
 ## Installation
@@ -76,7 +76,7 @@ pip install skil --user
 
 ## MLOps - Deep Learning in Production
 
-<img src="docs/skil-1.png" width="700" />
+<img src="docs/skil-1.png" width="800" />
 
 
 
