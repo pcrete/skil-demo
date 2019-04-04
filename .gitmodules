@@ -1,0 +1,3 @@
+[submodule "skil-python"]
+	path = skil-python
+	url = git@github.com:SkymindIO/skil-python.git
