@@ -85,14 +85,16 @@ docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v /path/to/li
 Now, you can access the SKIL UI by opening a browser window to [http://localhost:9008](http://localhost:9008) 
 
 
-### 2. Python client
+### 2. SKIL client
+
+**python client**
 SKIL's Python client can be SKIL's Docker Imagenstalled from PyPI:
 
 ```bash
 pip install skil --user
 ```
 
-
+**java client**
 ## Getting started
 
 ## Features
