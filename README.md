@@ -11,6 +11,8 @@ This project is introduced in an attempt to demonstrate the use of original repo
 ## Installation
 
 
+
+
 ### 1. SKIL's docker image
 To install SKIL itself, head over to [skymind.ai](https://docs.skymind.ai/docs/docker-image). 
 
@@ -55,7 +57,7 @@ docker run --rm -it --name skil -v skil-data:/var/skil --env SKIL_EMBEDDED_DB_PA
 # pull the SKIL image
 docker pull skymind/skil
 # or with gpu
-docker pull skymind/skil:1.2.0-cuda10.0-spark1.6-python2-centos7
+docker run --runtime=nvidia --rm -it -p 9008:9008 -p 8080:8080 skymind/skil:1.2.1-cuda10.0-spark1.6-python2-ubuntu16.04
 
 
 # run the SKIL server
@@ -85,6 +87,28 @@ docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v /path/to/li
 Now, you can access the SKIL UI by opening a browser window to [http://localhost:9008](http://localhost:9008) 
 
 
+#### Nvidia-docker
+* [Nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
+
+For Ubuntu 14.04/16.04/18.04, Debian Jessie/Stretch
+
+```bash
+# Add the package repositories
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
+  sudo apt-key add -
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
+  sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+sudo apt-get update
+
+# Install nvidia-docker2 and reload the Docker daemon configuration
+sudo apt-get install -y nvidia-docker2
+sudo pkill -SIGHUP dockerd
+
+# Test nvidia-smi with the latest official CUDA image
+docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
+```
+
 ### 2. SKIL client
 
 **python client**
@@ -105,11 +129,12 @@ pip install skil --user
 * Word2Vec
 
 ### 2. Image & Video
+* [Keras MNIST](notebooks/keras-mnist)
 * YOLO2
 * Inception
 * VGG
 
-### 3. Numerical and/or Categorical
+### 3. Numerical and Categorical Information
 
 ### 4. Time series
 
