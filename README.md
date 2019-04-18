@@ -130,7 +130,7 @@ pip install skil --user
 
 ### 2. Image & Video
 * [Keras MNIST](notebooks/keras-mnist)
-* YOLO2
+* [YOLO2](notebooks/tensorflow-yolo)
 * Inception
 * VGG
 
