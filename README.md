@@ -14,7 +14,7 @@ This project is introduced in an attempt to demonstrate the use of original repo
 
 
 ### 1. SKIL's docker image
-To install SKIL itself, head over to [skymind.ai](https://docs.skymind.ai/docs/docker-image). 
+To install SKIL itself, head over to [docs.skymind.ai](https://docs.skymind.ai/docs/docker-image). 
 
 #### Skymindops/skil-ce
 [https://hub.docker.com/r/skymindops/skil-ce](https://hub.docker.com/r/skymindops/skil-ce)
@@ -56,12 +56,15 @@ docker run --rm -it --name skil -v skil-data:/var/skil --env SKIL_EMBEDDED_DB_PA
 ```bash
 # pull the SKIL image
 docker pull skymind/skil
-# or with gpu
-docker run --runtime=nvidia --rm -it -p 9008:9008 -p 8080:8080 skymind/skil:1.2.1-cuda10.0-spark1.6-python2-ubuntu16.04
-
+docker pull skymind/skil:1.2.1-cuda10.0-spark1.6-python2-centos7 
+docker pull skymind/skil:1.2.1-cuda10.0-spark1.6-python2-ubuntu16.04
+docker pull skymind/skil:1.2.1-cuda10.0-spark1.6-python2-ubuntu18.04
 
 # run the SKIL server
 docker run --rm -it -p 9008:9008 -p 8080:8080 skymind/skil
+# or with gpu
+docker run --runtime=nvidia --rm -it -p 9008:9008 -p 8080:8080
+skymind/skil:1.2.1-cuda10.0-spark1.6-python2-centos7 
 
 # persistent Data
 docker volume create --name skil-data
