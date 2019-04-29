@@ -46,6 +46,83 @@ Now we need a client application to query this endpoint and get object detection
 
 ### Python Client
 
+#### Run YOLO-v2 Detection Inference¶
+```python
+
+import skil, requests, cv2, json
+import numpy as np
+
+# set configurations & temp image
+threshold=0.5
+needs_preprocessing=False
+image_path='images/img-3.jpg'
+
+url = 'http://{}/endpoints/{}/model/{}/v{}/detectobjects'.format(
+    skil_server.config.host,
+    deployment.name,
+    model.name,
+    model.version
+)
+
+response   = requests.post(
+    url    = url,
+    headers= skil_server.auth_headers,
+    files  = {'file': open(image_path,'rb').read()},
+    data   = {
+        'id': model.id,
+        'needs_preprocessing':needs_preprocessing,
+        'threshold': threshold
+    }
+)
+detections = response.json()
+```
+
+#### Detection JSON object
+```json
+{
+    "height": 290.0,
+    "predictedClasses": [
+        "person",
+        "horse",
+        "umbrella",
+        "handbag",
+        "teddy bear",
+        "dog",
+        "elephant",
+        "bottle",
+        "backpack",
+        "chair"
+    ],
+    "width": 105.0,
+    "confidences": [
+        0.9984509,
+        0.0003896143,
+        0.00022168506,
+        0.00016007567,
+        0.00012121937,
+        6.202207e-05,
+        3.9783445e-05,
+        3.6805603e-05,
+        3.272282e-05,
+        3.252795e-05
+    ],
+    "centerY": 377.0,
+    "centerX": 253.0,
+    "predictedClassNumbers": [
+        0,
+        17,
+        25,
+        26,
+        77,
+        16,
+        20,
+        39,
+        24,
+        56
+    ]
+}
+```
+
 ###  Java Client
 Clone this repo with the command to get the included YOLOv2 sample application that will retrive predictions and render the bounding boxes locally:
 ```
