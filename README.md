@@ -114,14 +114,18 @@ docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
 
 ### 2. SKIL client
 
-**python client**
+
+
+**python client**: [https://pypi.org/project/skil/](https://pypi.org/project/skil/)
+
 SKIL's Python client can be SKIL's Docker Imagenstalled from PyPI:
 
 ```bash
 pip install skil --user
 ```
 
-**java client**
+**java client (TODO)**
+
 ## Getting started
 
 ## Features
@@ -131,10 +135,12 @@ pip install skil --user
 * Text Classification
 * Word2Vec
 
-### 2. Image & Video
+### 2. Image & Video (TODO)
 * [Keras MNIST](notebooks/keras-mnist)
 * [YOLO2](notebooks/tensorflow-yolo)
-* Inception
+* ImageNet
+	* InceptionV3
+	* Xception
 * VGG
 
 ### 3. Numerical and Categorical Information
@@ -142,10 +148,9 @@ pip install skil --user
 ### 4. Time series
 
 
-
 ## References:
 
 * []()
-
+* []()
 
 
