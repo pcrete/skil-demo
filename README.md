@@ -69,11 +69,16 @@ docker run --runtime=nvidia --rm -it -p 9008:9008 -p 8080:8080 skymind/skil:1.2.
 docker volume create --name skil-data
 docker volume create --name skil-conf
 docker volume create --name skil-root
-docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -p 9008:9008 -p 8080:8080  skymind/skil
+docker run -it --rm \
+-v skil-root:/opt/skil \
+-v skil-data:/var/skil \
+-v skil-conf:/etc/skil \
+-p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
+
 
 # If you already have a license file, you can link it with docker in the following way:
 docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v /path/to/license:/etc/skil/license.txt -p 9008:9008 -p 8080:8080  skymind/skil
-
+```
 
 
 Now, you can access the SKIL UI by opening a browser window to [http://localhost:9008](http://localhost:9008) 

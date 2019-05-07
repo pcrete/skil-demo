@@ -1,0 +1,341 @@
+{
+    "id": "yolo-model-01",
+    "objects": [
+        {
+            "centerX": 135.0,
+            "centerY": 373.0,
+            "confidences": [
+                0.9997019,
+                9.041101e-05,
+                4.9534065e-05,
+                2.8544315e-05,
+                1.7648663e-05,
+                1.4100428e-05,
+                8.065511e-06,
+                7.890028e-06,
+                7.1107734e-06,
+                4.345046e-06
+            ],
+            "height": 476.0,
+            "predictedClassNumbers": [
+                0,
+                56,
+                77,
+                57,
+                16,
+                15,
+                60,
+                26,
+                39,
+                17
+            ],
+            "predictedClasses": [
+                "person",
+                "chair",
+                "teddy bear",
+                "sofa",
+                "dog",
+                "cat",
+                "diningtable",
+                "handbag",
+                "bottle",
+                "horse"
+            ],
+            "width": 290.0
+        },
+        {
+            "centerX": 181.0,
+            "centerY": 535.0,
+            "confidences": [
+                0.99060225,
+                0.003696204,
+                0.0023480814,
+                0.0011546358,
+                0.0009065214,
+                0.00064890384,
+                0.00017233408,
+                0.00015410053,
+                0.00011658551,
+                2.5641548e-05
+            ],
+            "height": 260.0,
+            "predictedClassNumbers": [
+                56,
+                13,
+                60,
+                57,
+                26,
+                59,
+                0,
+                28,
+                24,
+                1
+            ],
+            "predictedClasses": [
+                "chair",
+                "bench",
+                "diningtable",
+                "sofa",
+                "handbag",
+                "bed",
+                "person",
+                "suitcase",
+                "backpack",
+                "bicycle"
+            ],
+            "width": 333.0
+        },
+        {
+            "centerX": 234.0,
+            "centerY": 268.0,
+            "confidences": [
+                0.9994167,
+                0.00031443403,
+                3.853447e-05,
+                2.0847187e-05,
+                1.5633192e-05,
+                1.321458e-05,
+                9.058727e-06,
+                8.948248e-06,
+                8.432975e-06,
+                8.1737e-06
+            ],
+            "height": 190.0,
+            "predictedClassNumbers": [
+                0,
+                56,
+                57,
+                58,
+                77,
+                26,
+                40,
+                60,
+                24,
+                59
+            ],
+            "predictedClasses": [
+                "person",
+                "chair",
+                "sofa",
+                "pottedplant",
+                "teddy bear",
+                "handbag",
+                "wine glass",
+                "diningtable",
+                "backpack",
+                "bed"
+            ],
+            "width": 135.0
+        },
+        {
+            "centerX": 336.0,
+            "centerY": 216.0,
+            "confidences": [
+                0.9995577,
+                0.00016046476,
+                6.894221e-05,
+                5.292364e-05,
+                1.9949042e-05,
+                1.3241045e-05,
+                1.2088644e-05,
+                1.0012047e-05,
+                8.694528e-06,
+                7.4671984e-06
+            ],
+            "height": 224.0,
+            "predictedClassNumbers": [
+                0,
+                56,
+                58,
+                26,
+                25,
+                24,
+                75,
+                40,
+                77,
+                57
+            ],
+            "predictedClasses": [
+                "person",
+                "chair",
+                "pottedplant",
+                "handbag",
+                "umbrella",
+                "backpack",
+                "vase",
+                "wine glass",
+                "teddy bear",
+                "sofa"
+            ],
+            "width": 131.0
+        },
+        {
+            "centerX": 450.0,
+            "centerY": 439.0,
+            "confidences": [
+                0.9966536,
+                0.0011865135,
+                0.0010224085,
+                0.0005612933,
+                0.0002184657,
+                5.0947445e-05,
+                4.253171e-05,
+                3.279526e-05,
+                2.7570377e-05,
+                2.4577415e-05
+            ],
+            "height": 369.0,
+            "predictedClassNumbers": [
+                60,
+                56,
+                59,
+                57,
+                0,
+                55,
+                13,
+                25,
+                8,
+                58
+            ],
+            "predictedClasses": [
+                "diningtable",
+                "chair",
+                "bed",
+                "sofa",
+                "person",
+                "cake",
+                "bench",
+                "umbrella",
+                "boat",
+                "pottedplant"
+            ],
+            "width": 547.0
+        },
+        {
+            "centerX": 656.0,
+            "centerY": 193.0,
+            "confidences": [
+                0.99605906,
+                0.0033794767,
+                0.00013544656,
+                8.562033e-05,
+                5.0431136e-05,
+                3.957596e-05,
+                2.5339148e-05,
+                2.046498e-05,
+                1.9310808e-05,
+                1.722943e-05
+            ],
+            "height": 152.0,
+            "predictedClassNumbers": [
+                0,
+                56,
+                13,
+                2,
+                57,
+                7,
+                8,
+                25,
+                6,
+                58
+            ],
+            "predictedClasses": [
+                "person",
+                "chair",
+                "bench",
+                "car",
+                "sofa",
+                "truck",
+                "boat",
+                "umbrella",
+                "train",
+                "pottedplant"
+            ],
+            "width": 190.0
+        },
+        {
+            "centerX": 760.0,
+            "centerY": 370.0,
+            "confidences": [
+                0.98420066,
+                0.015281237,
+                0.00021188639,
+                7.699072e-05,
+                3.1279127e-05,
+                3.0221421e-05,
+                2.2264823e-05,
+                1.9181949e-05,
+                1.48396775e-05,
+                1.124826e-05
+            ],
+            "height": 492.0,
+            "predictedClassNumbers": [
+                0,
+                56,
+                57,
+                13,
+                77,
+                26,
+                27,
+                59,
+                24,
+                60
+            ],
+            "predictedClasses": [
+                "person",
+                "chair",
+                "sofa",
+                "bench",
+                "teddy bear",
+                "handbag",
+                "tie",
+                "bed",
+                "backpack",
+                "diningtable"
+            ],
+            "width": 382.0
+        },
+        {
+            "centerX": 758.0,
+            "centerY": 479.0,
+            "confidences": [
+                0.99832946,
+                0.00095418596,
+                0.00046938064,
+                0.00014046178,
+                8.4780215e-05,
+                3.2611904e-06,
+                2.1845897e-06,
+                1.9848846e-06,
+                1.375969e-06,
+                1.170247e-06
+            ],
+            "height": 364.0,
+            "predictedClassNumbers": [
+                56,
+                0,
+                13,
+                57,
+                60,
+                26,
+                61,
+                25,
+                59,
+                24
+            ],
+            "predictedClasses": [
+                "chair",
+                "person",
+                "bench",
+                "sofa",
+                "diningtable",
+                "handbag",
+                "toilet",
+                "umbrella",
+                "bed",
+                "backpack"
+            ],
+            "width": 343.0
+        }
+    ]
+}
