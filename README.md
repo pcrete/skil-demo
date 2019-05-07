@@ -56,6 +56,7 @@ docker run --rm -it --name skil -v skil-data:/var/skil --env SKIL_EMBEDDED_DB_PA
 ```bash
 # pull the SKIL image
 docker pull skymind/skil
+docker pull skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
 docker pull skymind/skil:1.2.1-cuda10.0-spark1.6-python2-centos7 
 docker pull skymind/skil:1.2.1-cuda10.0-spark1.6-python2-ubuntu16.04
 docker pull skymind/skil:1.2.1-cuda10.0-spark1.6-python2-ubuntu18.04
