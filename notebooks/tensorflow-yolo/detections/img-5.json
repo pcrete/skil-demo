@@ -1,0 +1,383 @@
+{
+    "id": "yolo-model-01",
+    "objects": [
+        {
+            "centerX": 41.0,
+            "centerY": 239.0,
+            "confidences": [
+                0.66796684,
+                0.32458156,
+                0.005724582,
+                0.00025993394,
+                0.00017069804,
+                0.00013948548,
+                0.00010358643,
+                0.00010034084,
+                5.5741453e-05,
+                5.4394255e-05
+            ],
+            "height": 216.0,
+            "predictedClassNumbers": [
+                7,
+                2,
+                5,
+                0,
+                3,
+                6,
+                62,
+                12,
+                39,
+                67
+            ],
+            "predictedClasses": [
+                "truck",
+                "car",
+                "bus",
+                "person",
+                "motorbike",
+                "train",
+                "tvmonitor",
+                "parking meter",
+                "bottle",
+                "cell phone"
+            ],
+            "width": 90.0
+        },
+        {
+            "centerX": 48.0,
+            "centerY": 257.0,
+            "confidences": [
+                0.6647831,
+                0.33372256,
+                0.0011374409,
+                0.00020730385,
+                4.659004e-05,
+                1.180832e-05,
+                6.929292e-06,
+                6.2256518e-06,
+                6.0456227e-06,
+                5.436162e-06
+            ],
+            "height": 209.0,
+            "predictedClassNumbers": [
+                2,
+                7,
+                5,
+                0,
+                3,
+                6,
+                58,
+                12,
+                26,
+                56
+            ],
+            "predictedClasses": [
+                "car",
+                "truck",
+                "bus",
+                "person",
+                "motorbike",
+                "train",
+                "pottedplant",
+                "parking meter",
+                "handbag",
+                "chair"
+            ],
+            "width": 76.0
+        },
+        {
+            "centerX": 144.0,
+            "centerY": 261.0,
+            "confidences": [
+                0.96425915,
+                0.023586113,
+                0.008587559,
+                0.0014346332,
+                0.0009031644,
+                0.0004974076,
+                0.00027590478,
+                9.439912e-05,
+                8.956069e-05,
+                3.086557e-05
+            ],
+            "height": 118.0,
+            "predictedClassNumbers": [
+                2,
+                7,
+                0,
+                5,
+                3,
+                58,
+                26,
+                12,
+                1,
+                24
+            ],
+            "predictedClasses": [
+                "car",
+                "truck",
+                "person",
+                "bus",
+                "motorbike",
+                "pottedplant",
+                "handbag",
+                "parking meter",
+                "bicycle",
+                "backpack"
+            ],
+            "width": 46.0
+        },
+        {
+            "centerX": 217.0,
+            "centerY": 266.0,
+            "confidences": [
+                0.7921575,
+                0.16914135,
+                0.022800257,
+                0.0059406087,
+                0.0051238923,
+                0.0008100312,
+                0.00051707047,
+                0.00032966104,
+                0.00032145542,
+                0.00018051827
+            ],
+            "height": 228.0,
+            "predictedClassNumbers": [
+                0,
+                2,
+                7,
+                58,
+                5,
+                3,
+                26,
+                39,
+                1,
+                16
+            ],
+            "predictedClasses": [
+                "person",
+                "car",
+                "truck",
+                "pottedplant",
+                "bus",
+                "motorbike",
+                "handbag",
+                "bottle",
+                "bicycle",
+                "dog"
+            ],
+            "width": 137.0
+        },
+        {
+            "centerX": 365.0,
+            "centerY": 287.0,
+            "confidences": [
+                0.9773769,
+                0.022157414,
+                0.00012529579,
+                0.000115866635,
+                5.8389058e-05,
+                1.9337642e-05,
+                1.6842065e-05,
+                1.2339438e-05,
+                1.1828476e-05,
+                8.07819e-06
+            ],
+            "height": 163.0,
+            "predictedClassNumbers": [
+                2,
+                7,
+                5,
+                3,
+                0,
+                58,
+                1,
+                26,
+                12,
+                45
+            ],
+            "predictedClasses": [
+                "car",
+                "truck",
+                "bus",
+                "motorbike",
+                "person",
+                "pottedplant",
+                "bicycle",
+                "handbag",
+                "parking meter",
+                "bowl"
+            ],
+            "width": 195.0
+        },
+        {
+            "centerX": 452.0,
+            "centerY": 259.0,
+            "confidences": [
+                0.9919629,
+                0.005827346,
+                0.001065383,
+                0.0007653848,
+                0.00014572333,
+                0.00011171556,
+                2.0521678e-05,
+                1.1402204e-05,
+                8.39568e-06,
+                6.725043e-06
+            ],
+            "height": 70.0,
+            "predictedClassNumbers": [
+                2,
+                7,
+                0,
+                3,
+                5,
+                12,
+                1,
+                13,
+                9,
+                56
+            ],
+            "predictedClasses": [
+                "car",
+                "truck",
+                "person",
+                "motorbike",
+                "bus",
+                "parking meter",
+                "bicycle",
+                "bench",
+                "traffic light",
+                "chair"
+            ],
+            "width": 45.0
+        },
+        {
+            "centerX": 530.0,
+            "centerY": 273.0,
+            "confidences": [
+                0.97778875,
+                0.021148857,
+                0.00029133138,
+                0.0002601768,
+                0.00022818458,
+                3.573123e-05,
+                2.7653276e-05,
+                1.6242187e-05,
+                1.6217686e-05,
+                1.114639e-05
+            ],
+            "height": 128.0,
+            "predictedClassNumbers": [
+                2,
+                7,
+                5,
+                0,
+                3,
+                12,
+                20,
+                67,
+                19,
+                17
+            ],
+            "predictedClasses": [
+                "car",
+                "truck",
+                "bus",
+                "person",
+                "motorbike",
+                "parking meter",
+                "elephant",
+                "cell phone",
+                "cow",
+                "horse"
+            ],
+            "width": 126.0
+        },
+        {
+            "centerX": 709.0,
+            "centerY": 289.0,
+            "confidences": [
+                0.9900356,
+                0.008441179,
+                0.0009582068,
+                0.00015360578,
+                5.4143304e-05,
+                4.1184634e-05,
+                3.8743878e-05,
+                3.5049008e-05,
+                2.2627897e-05,
+                1.8016117e-05
+            ],
+            "height": 142.0,
+            "predictedClassNumbers": [
+                2,
+                7,
+                3,
+                0,
+                5,
+                12,
+                22,
+                1,
+                19,
+                20
+            ],
+            "predictedClasses": [
+                "car",
+                "truck",
+                "motorbike",
+                "person",
+                "bus",
+                "parking meter",
+                "zebra",
+                "bicycle",
+                "cow",
+                "elephant"
+            ],
+            "width": 199.0
+        },
+        {
+            "centerX": 807.0,
+            "centerY": 264.0,
+            "confidences": [
+                0.8821528,
+                0.11679534,
+                0.0008226944,
+                5.7901223e-05,
+                5.0354032e-05,
+                2.2784954e-05,
+                1.7192999e-05,
+                9.043629e-06,
+                6.284624e-06,
+                5.339096e-06
+            ],
+            "height": 138.0,
+            "predictedClassNumbers": [
+                2,
+                7,
+                5,
+                3,
+                6,
+                8,
+                0,
+                4,
+                12,
+                62
+            ],
+            "predictedClasses": [
+                "car",
+                "truck",
+                "bus",
+                "motorbike",
+                "train",
+                "boat",
+                "person",
+                "aeroplane",
+                "parking meter",
+                "tvmonitor"
+            ],
+            "width": 141.0
+        }
+    ]
+}
