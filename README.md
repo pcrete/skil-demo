@@ -72,7 +72,7 @@ docker volume create --name skil-root
 
 docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
 
-docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v ~/.skil/skil-license.txt:/etc/skil/license.txt -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
+docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v /home/poom/.skil/skil-license.txt:/etc/skil/license.txt -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
 ```
 
 
