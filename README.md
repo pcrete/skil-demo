@@ -11,8 +11,6 @@ This project is introduced in an attempt to demonstrate the use of original repo
 ## Installation
 
 
-
-
 ### 1. SKIL's docker image
 To install SKIL itself, head over to [docs.skymind.ai](https://docs.skymind.ai/docs/docker-image). 
 
@@ -63,26 +61,30 @@ docker pull skymind/skil:1.2.1-cuda10.0-spark1.6-python2-ubuntu18.04
 
 # run the SKIL server
 docker run --rm -it -p 9008:9008 -p 8080:8080 skymind/skil
+
 # or with gpu
 docker run --runtime=nvidia --rm -it -p 9008:9008 -p 8080:8080 skymind/skil:1.2.1-cuda10.0-spark1.6-python2-centos7 
 
-# persistent Data
+# persistent data
 docker volume create --name skil-data
 docker volume create --name skil-conf
 docker volume create --name skil-root
-docker run -it --rm \
--v skil-root:/opt/skil \
--v skil-data:/var/skil \
--v skil-conf:/etc/skil \
--p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
 
+docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
 
-# If you already have a license file, you can link it with docker in the following way:
-docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v /path/to/license:/etc/skil/license.txt -p 9008:9008 -p 8080:8080  skymind/skil
+docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v ~/.skil/skil-license.txt:/etc/skil/license.txt -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
 ```
 
 
 Now, you can access the SKIL UI by opening a browser window to [http://localhost:9008](http://localhost:9008) 
+
+### Docker Commands
+
+```bash
+# expose all the container ports
+docker run --network host ...
+docker exec -i -t container_id bash
+```
 
 
 #### Nvidia-docker
@@ -108,9 +110,6 @@ docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
 ```
 
 ### 2. SKIL client
-
-
-
 **python client**: [https://pypi.org/project/skil/](https://pypi.org/project/skil/)
 
 SKIL's Python client can be SKIL's Docker Imagenstalled from PyPI:
@@ -142,9 +141,7 @@ pip install skil --user
 
 ### 4. Time series
 
-
 ## References:
-
 * []()
 * []()
 

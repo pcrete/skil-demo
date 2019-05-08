@@ -1,5 +1,3 @@
 .*pyc
 .ipynb_checkpoints/
 notebooks/tensorflow-yolo/yolo2.pb
-
-SKIL_LICENSE
