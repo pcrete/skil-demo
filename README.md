@@ -61,6 +61,8 @@ docker pull skymind/skil:1.2.1-cuda10.0-spark1.6-python2-ubuntu18.04
 
 # run the SKIL server
 docker run --rm -it -p 9008:9008 -p 8080:8080 skymind/skil
+# with license
+docker run --rm -it -p 9008:9008 -p 8080:8080 -v /home/poom/.skil/skil-license.txt:/etc/skil/license.txt skymind/skil
 
 # or with gpu
 docker run --runtime=nvidia --rm -it -p 9008:9008 -p 8080:8080 skymind/skil:1.2.1-cuda10.0-spark1.6-python2-centos7 
@@ -71,7 +73,7 @@ docker volume create --name skil-conf
 docker volume create --name skil-root
 
 docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
-
+# with license
 docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v /home/poom/.skil/skil-license.txt:/etc/skil/license.txt -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
 ```
 
@@ -131,11 +133,10 @@ pip install skil --user
 
 ### 2. Image & Video (TODO)
 * [Keras MNIST](notebooks/keras-mnist)
-* [YOLO2](notebooks/tensorflow-yolo)
-* ImageNet
-	* InceptionV3
-	* Xception
 * VGG
+* InceptionV3
+* Xception
+* [YOLO2](notebooks/tensorflow-yolo)
 
 ### 3. Numerical and Categorical Information
 
