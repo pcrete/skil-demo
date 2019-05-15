@@ -38,11 +38,6 @@ docker volume create --name skil-data
 docker volume create --name skil-conf
 docker volume create --name skil-root
 
-<<<<<<< HEAD
-docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
-# with license
-docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v /home/poom/.skil/skil-license.txt:/etc/skil/license.txt -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
-=======
 docker run -it --rm \
 -v skil-root:/opt/skil \
 -v skil-data:/var/skil \
@@ -68,7 +63,6 @@ SKIL_BACKEND=gpu
 
 DEFAULT_ZEPPELIN_BACKEND=gpu
 DEFAULT_ZEPPELIN_JVM_ARGS=-Xmx16g -Dorg.bytedeco.javacpp.maxbytes=16G -Dorg.bytedeco.javacpp.maxphysicalbytes=16G -Dorg.nd4j.versioncheck=false -Dorg.deeplearning4j.config.custom.enabled=false
->>>>>>> d8347977e90c5974ea620e892f42f9d5db7f903f
 ```
 
 Add ENV file to `/etc/skil/skil-env.sh`
