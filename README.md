@@ -14,40 +14,6 @@ This project is introduced in an attempt to demonstrate the use of original repo
 ### 1. SKIL's docker image
 To install SKIL itself, head over to [docs.skymind.ai](https://docs.skymind.ai/docs/docker-image). 
 
-#### Skymindops/skil-ce
-[https://hub.docker.com/r/skymindops/skil-ce](https://hub.docker.com/r/skymindops/skil-ce)
-
-
-```bash
-# pull the SKIL image
-docker pull skymindops/skil-ce
-
-# run the SKIL server
-docker run --rm -it -p 9008:9008 skymindops/skil-ce bash /start-skil.sh
-
-# Persisting data with Zookeeper
-docker volume create --name zk-data
-docker volume create --name zk-datalog
-docker volume create --name skil-data
-docker pull zookeeper
-docker run --name zookeeper -v zk-data:/data -v zk-datalog:/datalog -d zookeeper
-docker run --rm -it --name skil -v skil-data:/var/skil \
---env SKIL_EMBEDDED_DB_PATH=/var/skil/skildb \
---env ZOOKEEPER_EMBEDDED=false \
---env ZOOKEEPER_HOST=zookeeper \
---env ZOOKEEPER_PORT=2181 \
---link zookeeper:zookeeper \
--p 9008:9008 -p 8080:8080 skymindops/skil-ce bash /start-skil.sh
-
-# stop SKIL and Zookeeper with:
-docker stop skil
-docker stop zookeeper
-
-# start it back again with:
-docker start zookeeper
-docker run --rm -it --name skil -v skil-data:/var/skil --env SKIL_EMBEDDED_DB_PATH=/var/skil/skildb --env ZOOKEEPER_EMBEDDED=false --env ZOOKEEPER_HOST=zookeeper --env ZOOKEEPER_PORT=2181 --link zookeeper:zookeeper -p 9008:9008 -p 8080:8080 skymindops/skil-ce bash /start-skil.sh
-```
-
 #### Skymind/skil
 
 [https://hub.docker.com/r/skymind/skil/](https://hub.docker.com/r/skymind/skil/)
@@ -65,20 +31,68 @@ docker run --rm -it -p 9008:9008 -p 8080:8080 skymind/skil
 docker run --rm -it -p 9008:9008 -p 8080:8080 -v /home/poom/.skil/skil-license.txt:/etc/skil/license.txt skymind/skil
 
 # or with gpu
-docker run --runtime=nvidia --rm -it -p 9008:9008 -p 8080:8080 skymind/skil:1.2.1-cuda10.0-spark1.6-python2-centos7 
+docker run --runtime=nvidia --rm -it -p 9008:9008 -p 8080:8080 skymind/skil
 
 # persistent data
 docker volume create --name skil-data
 docker volume create --name skil-conf
 docker volume create --name skil-root
 
+<<<<<<< HEAD
 docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
 # with license
 docker run -it --rm -v skil-root:/opt/skil -v skil-data:/var/skil -v skil-conf:/etc/skil -v /home/poom/.skil/skil-license.txt:/etc/skil/license.txt -p 9008:9008 -p 8080:8080  skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
+=======
+docker run -it --rm \
+-v skil-root:/opt/skil \
+-v skil-data:/var/skil \
+-v skil-conf:/etc/skil \
+-p 9008:9008 -p 8080:8080 \
+skymind/skil:1.2.1-cpu-spark1.6-python2-centos7 
+
+# add license file
+-v /home/poom/.skil/skil-license.txt:/etc/skil/license.txt
 ```
 
+#### SKIL environment variables for GPU mode
+
+* [https://docs.skymind.ai/docs/skil-environment-ui](https://docs.skymind.ai/docs/skil-environment-ui)
+* [https://docs.skymind.ai/docs/gpu-mode](https://docs.skymind.ai/docs/gpu-mode)
+
+Sample Configuration:
+```zsh
+FORCE_APPLY_CONF=true
+
+SKIL_CLASS_PATH=/opt/skil/cuda/*:/opt/skil/lib/*:/opt/skil/native/*:/etc/skil/*
+SKIL_BACKEND=gpu
+
+DEFAULT_ZEPPELIN_BACKEND=gpu
+DEFAULT_ZEPPELIN_JVM_ARGS=-Xmx16g -Dorg.bytedeco.javacpp.maxbytes=16G -Dorg.bytedeco.javacpp.maxphysicalbytes=16G -Dorg.nd4j.versioncheck=false -Dorg.deeplearning4j.config.custom.enabled=false
+>>>>>>> d8347977e90c5974ea620e892f42f9d5db7f903f
+```
+
+Add ENV file to `/etc/skil/skil-env.sh`
+
+```bash
+# persistent data + gpu + env
+docker run --runtime=nvidia --rm -it --network host \
+-v skil-root:/opt/skil \
+-v skil-data:/var/skil \
+-v skil-conf:/etc/skil \
+-v /home/skymind/skil-env.sh:/etc/skil/skil-env.sh \
+skymind/skil:1.2.1-cuda10.0-spark1.6-python2-ubuntu16.04
+
+# debug skil
+tail -f /var/log/skil/skil.log
+```
 
 Now, you can access the SKIL UI by opening a browser window to [http://localhost:9008](http://localhost:9008) 
+
+#### Skymindops/skil-ce
+[https://hub.docker.com/r/skymindops/skil-ce](https://hub.docker.com/r/skymindops/skil-ce)
+
+For more details, head over to: [docs/skil-ce_installation.md](docs/skil-ce_installation.md)
+
 
 ### Docker Commands
 

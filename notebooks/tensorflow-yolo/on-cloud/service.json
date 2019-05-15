@@ -1,1 +1,8 @@
-{"deployment_id": "2", "experiment_id": "yolo-experiment-01", "workspace_id": "050e0b44-6afc-4fe6-a31d-c0616dc597fa", "model_id": "yolo-model-01", "model_name": "yolo-model", "model_entity_id": "yolo-model-01"}
+{
+    "deployment_id": 5,
+    "experiment_id": "yolo-experiment-01",
+    "model_entity_id": 3,
+    "model_id": "yolo-model-01",
+    "model_name": "yolo-model",
+    "workspace_id": "ca2614ce-637a-4ef4-9d68-d87b364bc896"
+}
