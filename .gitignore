@@ -1,4 +1,6 @@
 .*pyc
 .ipynb_checkpoints/
 __pycache__/
+
 notebooks/tensorflow-yolo/yolo2.pb
+notebooks/tensorflow-yolo/on-cloud/yolo2.pb
