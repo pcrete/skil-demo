@@ -1,0 +1,341 @@
+{
+    "id": "yolo-model-01",
+    "objects": [
+        {
+            "centerX": 302.0,
+            "centerY": 420.0,
+            "confidences": [
+                0.99510646,
+                0.0025128,
+                0.00057291996,
+                0.00016804234,
+                0.00016304909,
+                0.000106563006,
+                8.9839945e-05,
+                8.971947e-05,
+                8.888036e-05,
+                8.601175e-05
+            ],
+            "height": 338.0,
+            "predictedClassNumbers": [
+                0,
+                39,
+                56,
+                12,
+                62,
+                10,
+                41,
+                2,
+                13,
+                73
+            ],
+            "predictedClasses": [
+                "person",
+                "bottle",
+                "chair",
+                "parking meter",
+                "tvmonitor",
+                "fire hydrant",
+                "cup",
+                "car",
+                "bench",
+                "book"
+            ],
+            "width": 113.0
+        },
+        {
+            "centerX": 363.0,
+            "centerY": 414.0,
+            "confidences": [
+                0.99775666,
+                0.0016294912,
+                8.432464e-05,
+                5.265349e-05,
+                4.332323e-05,
+                3.344594e-05,
+                2.9421315e-05,
+                2.3344199e-05,
+                2.0182999e-05,
+                1.8640323e-05
+            ],
+            "height": 331.0,
+            "predictedClassNumbers": [
+                0,
+                39,
+                56,
+                41,
+                67,
+                62,
+                26,
+                73,
+                34,
+                10
+            ],
+            "predictedClasses": [
+                "person",
+                "bottle",
+                "chair",
+                "cup",
+                "cell phone",
+                "tvmonitor",
+                "handbag",
+                "book",
+                "baseball bat",
+                "fire hydrant"
+            ],
+            "width": 115.0
+        },
+        {
+            "centerX": 428.0,
+            "centerY": 369.0,
+            "confidences": [
+                0.99987745,
+                3.9853818e-05,
+                1.5561693e-05,
+                8.314638e-06,
+                4.6689042e-06,
+                4.237352e-06,
+                3.6928507e-06,
+                2.9415003e-06,
+                2.8315228e-06,
+                2.6863856e-06
+            ],
+            "height": 296.0,
+            "predictedClassNumbers": [
+                0,
+                39,
+                62,
+                73,
+                7,
+                6,
+                41,
+                24,
+                2,
+                72
+            ],
+            "predictedClasses": [
+                "person",
+                "bottle",
+                "tvmonitor",
+                "book",
+                "truck",
+                "train",
+                "cup",
+                "backpack",
+                "car",
+                "refrigerator"
+            ],
+            "width": 123.0
+        },
+        {
+            "centerX": 509.0,
+            "centerY": 542.0,
+            "confidences": [
+                0.9997156,
+                9.616903e-05,
+                5.8047175e-05,
+                4.0976705e-05,
+                1.4182943e-05,
+                1.4084749e-05,
+                1.114104e-05,
+                8.324621e-06,
+                6.2836216e-06,
+                4.999307e-06
+            ],
+            "height": 130.0,
+            "predictedClassNumbers": [
+                67,
+                65,
+                56,
+                0,
+                41,
+                39,
+                43,
+                74,
+                73,
+                26
+            ],
+            "predictedClasses": [
+                "cell phone",
+                "remote",
+                "chair",
+                "person",
+                "cup",
+                "bottle",
+                "knife",
+                "clock",
+                "book",
+                "handbag"
+            ],
+            "width": 206.0
+        },
+        {
+            "centerX": 698.0,
+            "centerY": 511.0,
+            "confidences": [
+                0.8677182,
+                0.10572282,
+                0.006594349,
+                0.0031342385,
+                0.0026695835,
+                0.0023182544,
+                0.0020905018,
+                0.0017070936,
+                0.001383681,
+                0.0009697286
+            ],
+            "height": 144.0,
+            "predictedClassNumbers": [
+                41,
+                67,
+                40,
+                56,
+                45,
+                65,
+                52,
+                39,
+                0,
+                73
+            ],
+            "predictedClasses": [
+                "cup",
+                "cell phone",
+                "wine glass",
+                "chair",
+                "bowl",
+                "remote",
+                "hot dog",
+                "bottle",
+                "person",
+                "book"
+            ],
+            "width": 145.0
+        },
+        {
+            "centerX": 794.0,
+            "centerY": 453.0,
+            "confidences": [
+                0.9981218,
+                0.00039060813,
+                0.0003827529,
+                0.00030644523,
+                0.00020137323,
+                0.00013466955,
+                7.70588e-05,
+                3.107183e-05,
+                2.8287071e-05,
+                2.7045926e-05
+            ],
+            "height": 140.0,
+            "predictedClassNumbers": [
+                0,
+                56,
+                24,
+                26,
+                2,
+                39,
+                3,
+                13,
+                41,
+                1
+            ],
+            "predictedClasses": [
+                "person",
+                "chair",
+                "backpack",
+                "handbag",
+                "car",
+                "bottle",
+                "motorbike",
+                "bench",
+                "cup",
+                "bicycle"
+            ],
+            "width": 81.0
+        },
+        {
+            "centerX": 926.0,
+            "centerY": 457.0,
+            "confidences": [
+                0.99767107,
+                0.00030747373,
+                0.0002800627,
+                0.00026937554,
+                0.00020005369,
+                0.00012992069,
+                0.00010501059,
+                8.626666e-05,
+                8.317327e-05,
+                6.279607e-05
+            ],
+            "height": 715.0,
+            "predictedClassNumbers": [
+                0,
+                7,
+                56,
+                2,
+                3,
+                13,
+                62,
+                5,
+                63,
+                20
+            ],
+            "predictedClasses": [
+                "person",
+                "truck",
+                "chair",
+                "car",
+                "motorbike",
+                "bench",
+                "tvmonitor",
+                "bus",
+                "laptop",
+                "elephant"
+            ],
+            "width": 943.0
+        },
+        {
+            "centerX": 1440.0,
+            "centerY": 739.0,
+            "confidences": [
+                0.81126934,
+                0.13910508,
+                0.011084931,
+                0.0072690994,
+                0.0068324716,
+                0.0062393034,
+                0.005308321,
+                0.0030585406,
+                0.0024413222,
+                0.0012236787
+            ],
+            "height": 90.0,
+            "predictedClassNumbers": [
+                56,
+                41,
+                26,
+                75,
+                40,
+                13,
+                39,
+                60,
+                45,
+                42
+            ],
+            "predictedClasses": [
+                "chair",
+                "cup",
+                "handbag",
+                "vase",
+                "wine glass",
+                "bench",
+                "bottle",
+                "diningtable",
+                "bowl",
+                "fork"
+            ],
+            "width": 113.0
+        }
+    ]
+}

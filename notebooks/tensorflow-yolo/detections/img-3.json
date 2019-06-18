@@ -1,0 +1,425 @@
+{
+    "id": "yolo-model-01",
+    "objects": [
+        {
+            "centerX": 376.0,
+            "centerY": 559.0,
+            "confidences": [
+                0.9986052,
+                0.00033527613,
+                0.00020715251,
+                0.00012132994,
+                0.00010681903,
+                6.038839e-05,
+                3.557737e-05,
+                3.5007295e-05,
+                3.3400913e-05,
+                2.7264958e-05
+            ],
+            "height": 435.0,
+            "predictedClassNumbers": [
+                0,
+                17,
+                25,
+                26,
+                77,
+                16,
+                20,
+                39,
+                19,
+                56
+            ],
+            "predictedClasses": [
+                "person",
+                "horse",
+                "umbrella",
+                "handbag",
+                "teddy bear",
+                "dog",
+                "elephant",
+                "bottle",
+                "cow",
+                "chair"
+            ],
+            "width": 153.0
+        },
+        {
+            "centerX": 494.0,
+            "centerY": 805.0,
+            "confidences": [
+                0.8716953,
+                0.09671759,
+                0.009419562,
+                0.007588722,
+                0.005312172,
+                0.0027458393,
+                0.0012851626,
+                0.00086204876,
+                0.00059697597,
+                0.0005804995
+            ],
+            "height": 365.0,
+            "predictedClassNumbers": [
+                0,
+                17,
+                19,
+                16,
+                18,
+                20,
+                56,
+                77,
+                26,
+                24
+            ],
+            "predictedClasses": [
+                "person",
+                "horse",
+                "cow",
+                "dog",
+                "sheep",
+                "elephant",
+                "chair",
+                "teddy bear",
+                "handbag",
+                "backpack"
+            ],
+            "width": 293.0
+        },
+        {
+            "centerX": 744.0,
+            "centerY": 609.0,
+            "confidences": [
+                0.99513876,
+                0.00243392,
+                0.00086353056,
+                0.00028208006,
+                0.00026795483,
+                0.000114082766,
+                0.00010701315,
+                0.00010485549,
+                9.5669246e-05,
+                5.511618e-05
+            ],
+            "height": 799.0,
+            "predictedClassNumbers": [
+                0,
+                17,
+                26,
+                24,
+                3,
+                23,
+                20,
+                22,
+                16,
+                77
+            ],
+            "predictedClasses": [
+                "person",
+                "horse",
+                "handbag",
+                "backpack",
+                "motorbike",
+                "giraffe",
+                "elephant",
+                "zebra",
+                "dog",
+                "teddy bear"
+            ],
+            "width": 230.0
+        },
+        {
+            "centerX": 914.0,
+            "centerY": 604.0,
+            "confidences": [
+                0.9974796,
+                0.0006928051,
+                0.0006482239,
+                0.00031371482,
+                7.270242e-05,
+                6.547497e-05,
+                6.0256738e-05,
+                5.6653815e-05,
+                5.3848125e-05,
+                5.163985e-05
+            ],
+            "height": 769.0,
+            "predictedClassNumbers": [
+                0,
+                17,
+                20,
+                26,
+                24,
+                77,
+                2,
+                3,
+                33,
+                23
+            ],
+            "predictedClasses": [
+                "person",
+                "horse",
+                "elephant",
+                "handbag",
+                "backpack",
+                "teddy bear",
+                "car",
+                "motorbike",
+                "kite",
+                "giraffe"
+            ],
+            "width": 226.0
+        },
+        {
+            "centerX": 986.0,
+            "centerY": 274.0,
+            "confidences": [
+                0.9984968,
+                0.00054738595,
+                0.00039139634,
+                0.00015070496,
+                0.00013555642,
+                6.488908e-05,
+                3.687064e-05,
+                1.9878082e-05,
+                1.8754863e-05,
+                1.8434115e-05
+            ],
+            "height": 221.0,
+            "predictedClassNumbers": [
+                0,
+                20,
+                16,
+                77,
+                17,
+                24,
+                26,
+                14,
+                8,
+                37
+            ],
+            "predictedClasses": [
+                "person",
+                "elephant",
+                "dog",
+                "teddy bear",
+                "horse",
+                "backpack",
+                "handbag",
+                "bird",
+                "boat",
+                "surfboard"
+            ],
+            "width": 157.0
+        },
+        {
+            "centerX": 1072.0,
+            "centerY": 354.0,
+            "confidences": [
+                0.9981346,
+                0.00046647305,
+                0.00036836165,
+                0.00022335256,
+                0.00015306078,
+                0.00014684016,
+                9.6960495e-05,
+                7.422799e-05,
+                6.6127555e-05,
+                2.2300743e-05
+            ],
+            "height": 159.0,
+            "predictedClassNumbers": [
+                0,
+                77,
+                16,
+                24,
+                20,
+                26,
+                25,
+                17,
+                56,
+                38
+            ],
+            "predictedClasses": [
+                "person",
+                "teddy bear",
+                "dog",
+                "backpack",
+                "elephant",
+                "handbag",
+                "umbrella",
+                "horse",
+                "chair",
+                "tennis racket"
+            ],
+            "width": 148.0
+        },
+        {
+            "centerX": 1054.0,
+            "centerY": 810.0,
+            "confidences": [
+                0.615059,
+                0.20727848,
+                0.120603204,
+                0.03423657,
+                0.0066499137,
+                0.0064001535,
+                0.004274609,
+                0.001385287,
+                0.00096271525,
+                0.000536107
+            ],
+            "height": 390.0,
+            "predictedClassNumbers": [
+                17,
+                0,
+                16,
+                19,
+                20,
+                18,
+                14,
+                21,
+                15,
+                56
+            ],
+            "predictedClasses": [
+                "horse",
+                "person",
+                "dog",
+                "cow",
+                "elephant",
+                "sheep",
+                "bird",
+                "bear",
+                "cat",
+                "chair"
+            ],
+            "width": 339.0
+        },
+        {
+            "centerX": 1146.0,
+            "centerY": 284.0,
+            "confidences": [
+                0.9898802,
+                0.0029971674,
+                0.002050788,
+                0.0015192787,
+                0.0009303174,
+                0.0007462614,
+                0.00037999777,
+                0.00026657217,
+                0.00026628812,
+                0.00024494418
+            ],
+            "height": 220.0,
+            "predictedClassNumbers": [
+                0,
+                24,
+                20,
+                26,
+                1,
+                36,
+                3,
+                77,
+                16,
+                17
+            ],
+            "predictedClasses": [
+                "person",
+                "backpack",
+                "elephant",
+                "handbag",
+                "bicycle",
+                "skateboard",
+                "motorbike",
+                "teddy bear",
+                "dog",
+                "horse"
+            ],
+            "width": 121.0
+        },
+        {
+            "centerX": 1223.0,
+            "centerY": 398.0,
+            "confidences": [
+                0.5788017,
+                0.29951045,
+                0.08822163,
+                0.014322502,
+                0.005787346,
+                0.0040155672,
+                0.0014912145,
+                0.0009704435,
+                0.00086659647,
+                0.0006431025
+            ],
+            "height": 114.0,
+            "predictedClassNumbers": [
+                25,
+                36,
+                37,
+                29,
+                33,
+                31,
+                43,
+                53,
+                34,
+                38
+            ],
+            "predictedClasses": [
+                "umbrella",
+                "skateboard",
+                "surfboard",
+                "frisbee",
+                "kite",
+                "snowboard",
+                "knife",
+                "pizza",
+                "baseball bat",
+                "tennis racket"
+            ],
+            "width": 136.0
+        },
+        {
+            "centerX": 1303.0,
+            "centerY": 188.0,
+            "confidences": [
+                0.98414063,
+                0.0042381645,
+                0.0019073513,
+                0.0013278202,
+                0.00074902846,
+                0.0007253923,
+                0.000572702,
+                0.0005497055,
+                0.00039244752,
+                0.00036934618
+            ],
+            "height": 201.0,
+            "predictedClassNumbers": [
+                0,
+                1,
+                3,
+                8,
+                30,
+                20,
+                56,
+                17,
+                19,
+                14
+            ],
+            "predictedClasses": [
+                "person",
+                "bicycle",
+                "motorbike",
+                "boat",
+                "skis",
+                "elephant",
+                "chair",
+                "horse",
+                "cow",
+                "bird"
+            ],
+            "width": 215.0
+        }
+    ]
+}

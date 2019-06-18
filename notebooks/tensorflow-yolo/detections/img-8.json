@@ -1,0 +1,131 @@
+{
+    "id": "yolo-model-01",
+    "objects": [
+        {
+            "centerX": 353.0,
+            "centerY": 459.0,
+            "confidences": [
+                0.9999505,
+                1.05131485e-05,
+                8.494246e-06,
+                3.2902817e-06,
+                2.7826297e-06,
+                2.6443881e-06,
+                1.5542221e-06,
+                1.4734471e-06,
+                1.350101e-06,
+                1.3287286e-06
+            ],
+            "height": 280.0,
+            "predictedClassNumbers": [
+                0,
+                17,
+                16,
+                24,
+                56,
+                2,
+                26,
+                30,
+                5,
+                7
+            ],
+            "predictedClasses": [
+                "person",
+                "horse",
+                "dog",
+                "backpack",
+                "chair",
+                "car",
+                "handbag",
+                "skis",
+                "bus",
+                "truck"
+            ],
+            "width": 281.0
+        },
+        {
+            "centerX": 692.0,
+            "centerY": 741.0,
+            "confidences": [
+                0.9825372,
+                0.012214492,
+                0.0026738748,
+                0.0015656386,
+                0.00041621673,
+                0.00016452486,
+                0.00015938542,
+                0.00015885157,
+                3.1303247e-05,
+                1.1500213e-05
+            ],
+            "height": 504.0,
+            "predictedClassNumbers": [
+                7,
+                3,
+                2,
+                5,
+                8,
+                1,
+                6,
+                4,
+                13,
+                28
+            ],
+            "predictedClasses": [
+                "truck",
+                "motorbike",
+                "car",
+                "bus",
+                "boat",
+                "bicycle",
+                "train",
+                "aeroplane",
+                "bench",
+                "suitcase"
+            ],
+            "width": 1280.0
+        },
+        {
+            "centerX": 856.0,
+            "centerY": 578.0,
+            "confidences": [
+                0.9991442,
+                0.0002798534,
+                0.00025462554,
+                7.104858e-05,
+                3.2944507e-05,
+                2.9508854e-05,
+                2.837219e-05,
+                1.72599e-05,
+                1.3301938e-05,
+                1.2524744e-05
+            ],
+            "height": 418.0,
+            "predictedClassNumbers": [
+                0,
+                56,
+                16,
+                26,
+                15,
+                77,
+                2,
+                17,
+                14,
+                3
+            ],
+            "predictedClasses": [
+                "person",
+                "chair",
+                "dog",
+                "handbag",
+                "cat",
+                "teddy bear",
+                "car",
+                "horse",
+                "bird",
+                "motorbike"
+            ],
+            "width": 310.0
+        }
+    ]
+}
